@@ -7,6 +7,7 @@ const ManPage = () => {
     <div>
         <HeroMan></HeroMan>
         <ManSlide></ManSlide>
+        <ManPage></ManPage>
     </div>
   )
 }
