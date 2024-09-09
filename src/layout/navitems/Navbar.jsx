@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
   return (
     <div>
-      <div className=" flex justify-between  p-8">
+      <div className=" flex justify-between p-8 z-10">
         <div className="navmenu">
           <button id="open">
             <svg
@@ -78,6 +78,7 @@ const Navbar = () => {
                     className="nav block mt-8 capitalize md:text-4xl xl:text-5xl"
                     to={abc.path}
                     key={abc.id}
+                    
                   >
                     {abc.nam}
                   </NavLink>

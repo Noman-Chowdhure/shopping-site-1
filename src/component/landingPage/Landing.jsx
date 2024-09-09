@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero'
 import Slider from './Slider'
 import About from './About'
+import Category from './Category'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Landing = () => {
   return (
-    <div>
+    <div id='landing'>
+      
         <Hero></Hero>
         <Slider></Slider>
         <About></About>
+        <Category></Category>
     </div>
   )
 }

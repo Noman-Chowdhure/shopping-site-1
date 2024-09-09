@@ -1,8 +1,46 @@
+import { useGSAP } from '@gsap/react'
 import React from 'react'
-
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const About = () => {
+  useGSAP(()=>{
+    gsap.from( "#ol li", {
+      x:-300,
+      opacity:0,
+      duration:1.3,
+      stagger:1.2,
+      scrollTrigger:{
+        trigger:'#ol li',
+        scroller:'body',
+        start:'top 50%',
+        end:'top -100%',
+        markers:true,
+      }
+    })
+  },[])
   return (
-    <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aperiam quod voluptatibus dignissimos laudantium omnis animi saepe consequuntur repellat tempora, illum a quo eius dolores fugit iure soluta qui corporis atque excepturi molestiae? Eum porro alias fuga inventore esse nihil quisquam dolor atque, illum dolore ipsum est minus, ullam harum neque possimus dignissimos saepe repudiandae! Praesentium, optio reiciendis illum distinctio nisi harum iste minima consequuntur at vitae possimus placeat tempora earum cum expedita numquam similique sit deleniti molestiae itaque sequi nobis delectus. Illo impedit velit eligendi voluptatem fuga eaque officiis saepe animi similique exercitationem accusamus commodi, veritatis cumque facere dicta architecto neque autem consectetur quisquam temporibus, molestias dolore tenetur laborum? Laboriosam ex, quidem tenetur dignissimos sunt libero ipsum molestiae esse distinctio quo consequuntur enim sint recusandae sequi vitae provident culpa accusamus consequatur laudantium? Beatae, quibusdam magni animi exercitationem, enim, consectetur quis nostrum est illo voluptatibus tenetur ducimus necessitatibus quos ipsum laboriosam culpa accusantium doloribus sunt ut repudiandae sint id hic! Nemo minima minus nisi. Ex neque amet odio veniam libero ipsum voluptas perspiciatis consequatur, mollitia corrupti quod nostrum dolorem ut laborum quaerat, labore iure aut sit laboriosam tempora. Commodi cupiditate sunt eaque veritatis? Odio, facere? Architecto, earum. Ad earum quo rerum maiores in architecto? Possimus fugit alias quis praesentium, pariatur tenetur doloribus harum maiores sunt neque. Laboriosam ullam sunt consectetur a. Quo temporibus facere tenetur iusto autem nemo impedit qui dolorem ad, sed laborum quibusdam aspernatur officia sit ducimus saepe. Velit facilis quod ab quos laborum amet voluptatibus atque ipsa aspernatur rem magnam provident vitae illo perspiciatis cupiditate minima, dolor eos ipsam quas voluptates quasi recusandae sunt adipisci distinctio. Quaerat ex iste libero saepe ea fugit veritatis quibusdam sequi placeat impedit laborum quod voluptate sint quo nisi error, temporibus quisquam animi veniam quasi aspernatur officiis molestiae quos debitis? Adipisci, facere? Sapiente harum porro nihil quod, perferendis illum quidem quia rerum ipsa voluptatibus. Totam doloremque assumenda est temporibus quod hic accusantium tenetur consequatur itaque. Laborum earum molestiae accusantium! Ducimus excepturi minima quos quae eius voluptate nemo? Vel inventore velit, ab, atque quod optio ex dignissimos distinctio quia ratione explicabo voluptatem tempore autem, eos ipsa porro. Praesentium quidem quae facere necessitatibus illum in, est nostrum possimus minima, iure voluptatem exercitationem recusandae impedit ut neque repellat voluptatibus, saepe nulla enim? Quam molestias sapiente id assumenda! Vel alias soluta corrupti sed exercitationem numquam, beatae nam et! Amet a provident, sapiente voluptates saepe officiis voluptatum! Voluptates, odit iste. Error totam amet nulla sunt tempora, magnam pariatur omnis ut praesentium dolor eum deserunt delectus rem! Debitis necessitatibus doloremque suscipit rerum architecto culpa possimus quidem deserunt fuga aperiam assumenda delectus facilis recusandae eligendi quibusdam quia totam exercitationem saepe, accusamus itaque ut. Itaque tempore sequi sed harum reiciendis architecto similique est obcaecati cumque, dolores doloribus animi nihil quaerat ratione sunt dicta neque! Maxime magni voluptatibus dolores enim aspernatur accusantium amet obcaecati laboriosam natus libero! Nisi architecto facere placeat possimus, aliquid voluptatibus ex assumenda, enim totam molestias accusantium, sunt est vitae? Veritatis repellendus sequi necessitatibus velit ab dignissimos cum illum sit debitis nam ut, at ea molestias perspiciatis error soluta iste hic doloribus consequuntur aperiam deleniti, pariatur tempora. Tenetur, recusandae ipsam! Neque, odit? Pariatur deserunt, minima voluptatibus facere laboriosam saepe, nam aliquam quasi praesentium est magni sequi non quia voluptas aut. Blanditiis porro facilis voluptatum, ipsa pariatur vitae earum reprehenderit nam, incidunt similique laborum non est dolor corporis in ad soluta ratione exercitationem sed alias magni dolorem quam. Velit rerum corrupti suscipit deleniti cum fuga molestiae inventore autem excepturi neque ad, maxime praesentium doloremque fugiat aliquid aut animi nemo? Dolorum aliquid a autem sit delectus? Nisi ipsa eum distinctio? Provident officiis consequatur labore, ut dignissimos obcaecati. Debitis expedita ducimus reiciendis ipsam quod natus culpa cupiditate magni delectus pariatur voluptatem facilis voluptatibus quaerat quia vel, velit eveniet tempore dolore eius distinctio libero rerum voluptates quidem! Quod veritatis voluptas ex iure perferendis tenetur quaerat voluptatum deleniti nam, eaque libero assumenda pariatur minus vitae? Reiciendis voluptate, ratione harum consectetur facere quo excepturi, voluptatibus possimus assumenda ipsum esse. Impedit consequuntur alias ea vitae, aliquam, commodi ex consequatur nemo eveniet iure quasi, cupiditate nisi exercitationem vel laudantium corrupti qui ducimus ipsam esse omnis quis deleniti sapiente. Esse inventore explicabo saepe qui incidunt nemo odit consequuntur quas architecto animi fuga reprehenderit nulla delectus repudiandae, eligendi facere nihil, itaque quae sed quis error possimus, dolore exercitationem. Illum velit culpa, nemo praesentium perferendis earum fugit neque reiciendis? Exercitationem nobis eligendi iusto! Sunt eveniet atque enim consequatur, ipsa, ab qui non suscipit nemo provident ipsam, illum quisquam commodi in fuga. Dolor distinctio qui nam alias, consequuntur, voluptatem tempore vero quam voluptas debitis sunt culpa architecto fuga officiis, illo quis laboriosam accusamus nobis error sapiente. Accusantium ducimus eum animi deleniti officia ullam labore placeat unde harum reiciendis, numquam asperiores quod voluptatem explicabo at sapiente atque incidunt quia optio sint sunt. Temporibus necessitatibus nesciunt perferendis aperiam, blanditiis recusandae amet eligendi, doloremque dolore maiores quibusdam veniam qui iure! Ab eius reprehenderit vel dicta magnam debitis sapiente facere. Placeat, ex perspiciatis? Obcaecati facere voluptatum, ullam nulla quam veniam eligendi quo! Optio aspernatur distinctio minima repellendus non fugiat voluptate modi, dolorem sit eius mollitia cum. Omnis placeat quisquam eos. Tempore natus provident beatae ex recusandae quo, ratione quae amet quasi voluptatem quidem, laborum illum cumque incidunt cum dicta id adipisci sapiente voluptas inventore. Cupiditate sint est, asperiores cumque natus provident possimus voluptatibus, nesciunt repellendus ea aperiam. Officia, eum facilis ea, atque fugiat corrupti vel in rerum dolor ut assumenda aut repellendus ipsa earum, ducimus architecto corporis incidunt cumque voluptates tempore. Ipsa dolores laboriosam numquam modi nisi magnam placeat quam obcaecati dolore amet. Autem libero quisquam dolores vel at quaerat illo alias amet a consequatur quibusdam fugit minima corrupti blanditiis placeat mollitia modi nemo, labore doloremque? Deserunt minus et culpa explicabo facilis quibusdam, blanditiis repellat omnis fuga voluptatum nulla officia dolorem repudiandae cupiditate delectus quos. Ipsam quidem doloribus voluptates animi blanditiis? Eos ex reprehenderit esse harum velit minus? Nam laudantium ad voluptatum ipsa ut vel quisquam, perspiciatis, eligendi odit aliquam quo facilis ducimus tenetur.</p></div>
+    <div data-scroll data-scroll-speed="0.8" className=' p-8 ' id='about'>
+      <h1 id='topNav' className=' my-8 xl:text-6xl md:text-4xl capitalize font-light'>we make sure your product & creation deliverd porperly</h1>
+      <div className="content w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center">
+        <div className="eyes">
+          <h1 id='heading'>about us</h1>
+        </div>
+        <div className="text-content space-y-4">
+          <h1 className=' text-2xl capitalize '>why we are best platform for online..?</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet aliquam vel possimus magni ipsa fugiat quam repudiandae expedita harum, consectetur itaque eum ex repellat, sit ullam blanditiis quae nobis eaque!</p>
+          <nav>
+            <ol id='ol' className=' space-y-2'>
+               <li>we have latest colution ..</li>
+               <li>we have latest colution ..</li>
+               <li>we have latest colution ..</li>
+               <li>we have latest colution ..</li>
+               <li>we have latest colution ..</li>
+            </ol>
+          </nav>
+        </div>
+      </div>   
+    </div>
   )
 }
 

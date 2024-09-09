@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom'
 import Navbar from './navitems/Navbar'
 const Layout = () => {
   return (
-    <div>
+    <div className=' z-10'>
         <Navbar></Navbar>
         <Outlet></Outlet>
     </div>
