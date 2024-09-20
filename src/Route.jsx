@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Landing from "./component/landingPage/Landing";
 import LocomotiveScroll from 'locomotive-scroll';
-import ManPage from "./component/ManPage/ManPage";
+import Man from "./component/manPage/Man";
 
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -18,8 +18,9 @@ const router = createBrowserRouter([
         },
         {
           path:'/man',
-          element:<ManPage></ManPage>
+          element:<Man></Man>
         }
+       
       ]
     },
   ]);

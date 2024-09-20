@@ -5,6 +5,21 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   useGSAP(()=>{
+    gsap.from("#about",{
+      width:'100%',
+      height:'100%',
+      scale:0.7,
+      opacity:0,
+      duration:2.3,
+      scrollTrigger:{
+        trigger:'#about',
+        scroller:'body',
+        start:'top 50%',
+        end:'top -100%',
+        markers:true,
+      }
+
+    })
     gsap.from( "#ol li", {
       x:-300,
       opacity:0,
@@ -20,7 +35,7 @@ const About = () => {
     })
   },[])
   return (
-    <div data-scroll data-scroll-speed="0.8" className=' p-8 ' id='about'>
+    <div className=' p-4' id='about'>
       <h1 id='topNav' className=' my-8 xl:text-6xl md:text-4xl capitalize font-light'>we make sure your product & creation deliverd porperly</h1>
       <div className="content w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center">
         <div className="eyes">
