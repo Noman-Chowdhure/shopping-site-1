@@ -12,26 +12,26 @@ const ProductMan = () => {
         .then(data => setProduct(data));
      },[])
      console.log(product)
-    useGSAP(()=>{
-        gsap.from('#prouductMan',{
-            transform:'translate(-100%)',
-            opacity:0,
-            rotate:90,
-            duration:1.5,
-            scrollTrigger:{
-                trigger:"#prouductMan",
-                scroller:'body',
-                start:'top 60%',
-                end:"top -100%",
-                markers:true,
-            }
-        })
-    },[])
+    // useGSAP(()=>{
+    //     gsap.from('#prouductMan',{
+    //         transform:'translate(-100%)',
+    //         opacity:0,
+    //         rotate:90,
+    //         duration:1.5,
+    //         scrollTrigger:{
+    //             trigger:"#prouductMan",
+    //             scroller:'body',
+    //             start:'top 50%',
+    //             end:"top -100%",
+    //             markers:true,
+    //         }
+    //     })
+    // },[])
 
   return (
     <div id='prouductMan' className=' w-full h-full p-8'>
       <h1>out proudct's</h1>
-      <div className="items grid md:grid-cols-6 grid-cols-2 justify-center justify-items-center items-center gap-10 md:gap-20">
+      <div className="items grid md:grid-cols-5 grid-cols-2 justify-center justify-items-center items-center">
         {
           product.map(abc => <ProductCard key={abc.id} itmes={abc}></ProductCard>)
         }
