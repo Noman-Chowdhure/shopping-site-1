@@ -37,6 +37,7 @@ const SlideMan = () => {
 
   return (
     <div>
+      <h1 className=" absolute vertical ">look asomewe</h1>
        <div className="box grid grid-rows-4 grid-cols-1 gap-10 md:gap-20 w-full h-fit justify-center justify-items-center">
 
          <div className="child grid grid-cols-3">
