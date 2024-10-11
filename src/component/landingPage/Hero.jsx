@@ -33,10 +33,14 @@ const Hero = () => {
      })
   },[])
   return (
-    <div id='fuck' className='w-full h-screen grid justify-center items-center relative -z-10'>
-      <div className="box relative">
-        <h1 className=' capitalize'>modern</h1>
-        <img className=' absolute top-0 -z-10' src="https://i.pinimg.com/originals/9c/42/4b/9c424b06e20eac38487f679db77ff730.gif" alt="" />
+    <div className=' relative'>
+      <div id='fuck' className='w-full h-screen grid justify-center items-center -z-10'>
+      <div className="box">
+        <h1 className='capitalize'>e-shopping</h1>
+      </div>
+      </div>
+      <div id='heros' className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+         <p>30%</p>
       </div>
     </div>
   );
