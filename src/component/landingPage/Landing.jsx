@@ -5,6 +5,7 @@ import About from './About'
 import Category from './Category'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Clint from './Clint'
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
         <Slider></Slider>
         <About></About>
         <Category></Category>
+        <Clint></Clint>
     </div>
   )
 }

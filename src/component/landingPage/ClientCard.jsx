@@ -1,0 +1,30 @@
+import { useState } from "react";
+
+const ClientCard = ({abc}) => {
+    const [open,setOpen] = useState(true);
+    const {client_name,photo,comment,button,product} = abc;
+  return (
+    <div className={` grid grid-cols-4 border-t-[1px] justify-start justify-items-start  border-zinc-900 w-full ${open?"h-20":"h-64"}`}>
+        
+        <div className="product">
+            <p>{product}</p>
+        </div>
+        <div className="sercive">
+
+        </div>
+        <div className="clinent">
+            <h1 className="mb-14">{client_name}</h1>
+             <div className={open ? "opacity-0": "opacity-105"}>
+             <img className=" w-24 h-24 object-cover rounded-2xl " src={photo} alt="" />
+              <p>{comment}</p>
+             </div>
+        </div>
+        <div className="but">
+            <button className=" uppercase text-xl md:text-2xl font-medium border-b-2 border-gray-900 " onClick={()=>setOpen(!open)}>{open?'read':'close'}</button>
+        </div>
+
+    </div>
+  )
+}
+
+export default ClientCard

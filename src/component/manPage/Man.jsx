@@ -6,7 +6,7 @@ import SlideMan from './SlideMan'
 
 const Man = () => {
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
         <HeroMan></HeroMan>
         <SlideMan></SlideMan>
         <AboutMan></AboutMan>

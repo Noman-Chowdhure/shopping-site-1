@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <div id='fuck' className='w-full h-screen grid justify-center items-center relative -z-10'>
       <div className="box relative">
-        <h1 className=' xl:text-9xl text-5xl capitalize'>modern</h1>
+        <h1 className=' capitalize'>modern</h1>
         <img className=' absolute top-0 -z-10' src="https://i.pinimg.com/originals/9c/42/4b/9c424b06e20eac38487f679db77ff730.gif" alt="" />
       </div>
     </div>
