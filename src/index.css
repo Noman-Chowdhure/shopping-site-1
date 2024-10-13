@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Londrina+Sketch&display=swap');
 
 h1 span
 {
@@ -8,9 +10,13 @@ h1 span
    transform: rotate(13deg);
    font-size: 10vw;
    font-weight: bolder;
+  
 }
 
-
+.effect:hover {
+   @apply bg-slate-700 text-white transition-all delay-150 duration-150;
+ }
+ 
 #heros p
 {
    writing-mode:tb-rl;
@@ -47,4 +53,5 @@ h1 span
    text-transform: uppercase;
    opacity: 0.2;
    font-weight: bolder;
+   z-index: -1;
 }

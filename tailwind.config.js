@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        mono:"'Pacifico', cursive",
+        safari:"'Edu AU VIC WA NT Dots',cursive"
+      }
+    },
   },
   plugins: [
     require('daisyui'),

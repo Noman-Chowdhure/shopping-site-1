@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AboutMan = () => {
     useGSAP(()=>{
         function ManText (){
-            let taxt = document.querySelector('#heading');
+            let taxt = document.querySelector('#headin');
             let content = taxt.textContent;
             let spli = content.split("");
             let cluttert = '';
@@ -37,7 +37,7 @@ const AboutMan = () => {
   return (
     <div className=' w-full h-fit bg-zinc-900 py-9 px-5 space-y-10'>
        <p className='.aboutMan' id='fuck'>man page</p>
-       <h1 className=' text-3xl xl:text-8xl capitalize font-semibold' id='heading'>a space for new <br /> generation creatives</h1>
+       <h1 className=' text-3xl xl:text-8xl capitalize font-semibold' id='headin'>a space for new <br /> generation creatives</h1>
        <div className="text-bx grid grid-cols-2 justify-center justify-items-center gap-10">
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio debitis veritatis, autem quidem mollitia quo. Itaque harum, sed ut exercitationem nemo atque ratione explicabo natus fuga, at quaerat accusamus dicta.</p>
          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi doloremque odit quam quos porro, aliquid accusantium officiis necessitatibus? Ullam eos cupiditate amet doloribus quo tempora reiciendis molestias pariatur ea quas?</p>
