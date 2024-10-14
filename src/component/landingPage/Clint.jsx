@@ -11,7 +11,7 @@ const Clint = () => {
        .then(data =>setProduct(data));
     },[])
   return (
-    <div className=" w-full h-fit px-20">
+    <div className=" w-full h-fit md:px-20 px-5">
         <div className="title my-8">
             <h1 className=" my-12 text-4xl md:text-7xl capitalize ">clients reviews</h1>
         </div>

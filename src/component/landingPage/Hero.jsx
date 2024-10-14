@@ -36,7 +36,7 @@ const Hero = () => {
     <div className=' relative'>
       <div id='fuck' className='w-full h-screen grid justify-center items-center -z-10'>
       <div className="box">
-        <h1 className='capitalize font-mono'>e-shopping</h1>
+        <h1 className='capitalize font-mono text-5xl md:text-[10rem]'>e-shopping</h1>
       </div>
       </div>
       <div id='heros' className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>

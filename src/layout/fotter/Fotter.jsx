@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom'
 const Fotter = () => {
   return (
     <div className=' grid grid-cols-2 justify-center justify-items-center overflow-x-hidden '>
-        <div className="heading">
+        <div className="heading max-sm:hidden">
           <h1 className=' text-4xl md:text-8xl font-extrabold uppercase'>e-shop</h1>
         </div>
-        <div className="detils">
+        <div className="detils max-sm:w-full ">
             <h1 className=' text-4xl md:text-8xl font-extrabold uppercase'>presentations</h1>
-            <div className="servises grid grid-cols-2 gap-10 justify-center justify-items-start ">
+
+            <div className="servises grid grid-cols-2 gap-10 justify-center items-center justify-items-start ">
                 <div className="service">
                     <p>s:</p>
                      <ul>

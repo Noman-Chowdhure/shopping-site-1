@@ -8,7 +8,7 @@ h1 span
 {
    display: inline-block;
    transform: rotate(13deg);
-   font-size: 10vw;
+   /* font-size: 10vw; */
    font-weight: bolder;
   
 }

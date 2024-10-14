@@ -22,7 +22,7 @@ const Slider = () => {
   },[])
   return (
     <div id='slider' className=' bg-gray-100 p-8 w-full h-full grid grid-cols-1 rounded-tr-3xl rounded-tl-3xl overflow-x-hidden'>
-       <h1 className='text-[30rem] font-extrabold uppercase '>exclusive</h1>
+       <h1 className='md:text-[30rem] text-[10rem] font-extrabold uppercase '>exclusive</h1>
     </div>
   )
 }
